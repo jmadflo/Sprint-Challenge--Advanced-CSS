@@ -145,6 +145,16 @@ h5 {
   font-family: 'Russo One', sans-serif;
   color: #23293B;
 }
+h1:hover,
+h2:hover,
+h3:hover,
+h4:hover,
+h5:hover {
+  transform: scale(1.2, 1.2);
+  color: green;
+  text-decoration: underline;
+  transition-duration: 1.5s;
+}
 h2 {
   font-size: 3.2rem;
 }
@@ -159,6 +169,10 @@ p {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
+}
+img:hover {
+  transform: rotate(360deg);
+  transition-duration: 2s;
 }
 nav {
   width: 100%;
@@ -186,6 +200,12 @@ nav .links a {
   text-decoration: none;
   color: black;
   font-size: 1.5rem;
+}
+nav .links a:hover {
+  transform: scale(1.2, 1.2);
+  color: red;
+  text-decoration: underline;
+  transition-duration: 1.5s;
 }
 @media (max-width: 500px) {
   nav .links {
