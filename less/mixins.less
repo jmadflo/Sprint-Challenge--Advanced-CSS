@@ -6,19 +6,23 @@
     align-items: @align;
 }
 
+.pad_bot(@amount:25px){
+    padding-bottom: @amount;
+}
+
 .make_button(@width: 150px, @back-color: @shuttle-gray){
     .flex_fast();
     background-color: @back-color;
-    color: @waterloo;
-    margin: 10px 0;
+    color: white;
     width: @width;
-    height: 50px;
-    font-size: 2rem;
-    border-radius: 15px;
+    height: 35px;
+    font-size: 1.6rem;
+    border: 2px solid black;
+    border-radius: 5px;
     cursor: pointer;
     
     &:hover{
-        background-color: @waterloo;
+        background-color: white;
         color: @back-color;
     }
 }
