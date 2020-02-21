@@ -1,1 +1,32 @@
 // Navigation code here
+
+nav {
+    width: 100%;
+    .flex_fast(space-between, center);
+    height: 15vh;
+    border-bottom: 2px dashed @navigation-border;
+    margin-bottom: 0;
+    background-color: #F6F6F6;
+
+    .links{
+        .flex_fast(space-around, center);
+        width: 40%;
+        a {
+            text-decoration: none;
+            color: black;
+            font-size: 1.5rem;
+        }
+        @media @mobile {
+            margin: 10px 0;
+        }
+    }
+
+    @media @mobile {
+        flex-direction: column;
+        .flex_fast(flex-end, center);
+        .links{
+            width: 100%;
+        }
+    }
+    
+}

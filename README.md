@@ -34,13 +34,23 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
+1. A fully responsive website adjusts to the window that the site is viewed through in real time, while an adaptive site will detect the screen size before rendering and will not adjust to changes in the screen size in real time. Example: if we open a site on our desktop at full screen width and then shrink it to the width of a mobile screen, a responsive webiste will adjust the layout and the adaptive website will not.
+
 2. Describe what it means to be mobile first vs desktop first.
+
+2. Mobile-first means that the website was created first for a mobile view first and then adjusted using media queries and the min-width property for larger window sizes. Desktop first is the opposite. Desktop first means that the site was first built for a desktop sized screen and then adjusted using media queries and the max-width property to display a layout for smaller screens such as tablet or mobile.
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
 
+3. Setting font-size: 62.5% sets the default font-size for the website at 10px for most users, but allows for those who set their browser to display font larger or smaller to do that as well. The rem units are equal to some factor with which the default value will be multiplied by. Example when a default font is 10px, a value of 2.5 rem will equal 2.5 * 10px = 25px.
+
 4. How would you describe preprocessing to someone new to CSS?
 
+4. Preprocessing allows us to write CSS in a similar way to how we write HTML and then have a compiler translate that into regular CSS. This means that we can nest selectors inside of others so that we can more clearly target our styling. It also allows us to use variables to store values that will be used throughout the code and which we can change easily if we ever need to. We can also use mixins to reuse code that is used multiple times throughout the site without having to rewrite it.
+
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+5. The preprocessing concept that I enjoy using the most is variables because it means that if I ever want to change a value that is used throughout my site, I can just change it in one place rather than have to track down every time that I used that value and change it at each location. The preprocessing concept that I most struggled with is parametric mixins because it was not at first clear to me in which cases the parameter variables could be used inside of the mixin. I now understand that the variable(s) must be the value of a property and can not be used in functions inside of the value of a property in the mixin.
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
