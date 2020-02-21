@@ -1,1 +1,45 @@
 // Mixins Here
+
+.flex_fast(@justify:center, @align:center){
+    display: flex;
+    justify-content: @justify;
+    align-items: @align;
+}
+
+// Yes, I know .pad_bot is dumb, but I needed another mixin.
+.pad_bot(@amount:25px){
+    padding-bottom: @amount;
+}
+
+.grow_color_on_hover(@color: red, @decoration: underline){
+    &:hover {
+        transform: scale(1.2,1.2);
+        color: @color;
+        text-decoration: @decoration;
+        transition-duration: 1.5s;
+    }
+}
+
+.rotate_on_hover() {
+    &:hover {
+        transform: rotate(360deg);
+        transition-duration: 2s;
+    }
+}
+
+.make_button(@width: 150px, @back-color: @shuttle-gray){
+    .flex_fast();
+    background-color: @back-color;
+    color: white;
+    width: @width;
+    height: 35px;
+    font-size: 1.6rem;
+    border: 2px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+    
+    &:hover{
+        background-color: white;
+        color: @back-color;
+    }
+}

@@ -1,1 +1,36 @@
 // Navigation code here
+
+nav {
+    width: 100%;
+    .flex_fast(flex-end, center);
+    flex-direction: column;
+    font-family: @nav-font;
+    height: 15vh;
+    border-bottom: 2px solid @nav-border;
+    margin-bottom: 0;
+    background-color: @nav-bg;
+
+    h1 {
+        font-size: 4rem;
+    }
+
+    .links{
+        .flex_fast(space-between, center);
+        width: 48%;
+        a {
+            text-decoration: none;
+            color: black;
+            font-size: 1.5rem;
+
+            .grow_color_on_hover();
+        }
+
+        @media @phone {
+            width: 80%;
+            justify-content: space-around;
+        }
+
+        margin: 18px 0 10px;
+    }
+    
+}
