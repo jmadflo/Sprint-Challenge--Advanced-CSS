@@ -2,11 +2,17 @@
 
 nav {
     width: 100%;
-    .flex_fast(space-between, center);
+    .flex_fast(flex-end, center);
+    flex-direction: column;
+    font-family: @nav-font;
     height: 15vh;
-    border-bottom: 2px dashed @navigation-border;
+    border-bottom: 2px solid @nav-border;
     margin-bottom: 0;
-    background-color: #F6F6F6;
+    background-color: @nav-bg;
+
+    h1 {
+        font-size: 4rem;
+    }
 
     .links{
         .flex_fast(space-around, center);
@@ -16,17 +22,8 @@ nav {
             color: black;
             font-size: 1.5rem;
         }
-        @media @mobile {
-            margin: 10px 0;
-        }
-    }
 
-    @media @mobile {
-        flex-direction: column;
-        .flex_fast(flex-end, center);
-        .links{
-            width: 100%;
-        }
+        margin: 18px 0 10px;
     }
     
 }
